@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">CircleProgressBasr</string>
+    <string name="app_name">CircleProgressBar</string>
+    <string name="default_status">默认状态：</string>
+    <string name="pause_status">暂停状态：</string>
+    <string name="progress_status">进度状态：</string>
+    <string name="finish_status">完成状态：</string>
 </resources>

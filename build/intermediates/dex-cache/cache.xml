@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/apple/Documents/xiaozhiguang_github/CircleProgressBar/libs/build/intermediates/intermediate-jars/release/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="512e44479fb63b01ac0787fa1b7e55e856706919">
+        <dex dex="/Users/apple/Documents/xiaozhiguang_github/CircleProgressBar/app/build/intermediates/transforms/preDex/release/14.jar" />
+    </item>
+
+</items>

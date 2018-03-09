@@ -125,9 +125,9 @@ public class CircleProgressBar extends View {
     /**
      * 设置bitmap的宽高
      *
-     * @param bm
-     * @param newWidth
-     * @param newHeight
+     * @param bm        目标bitmap
+     * @param newWidth  新的bitmap宽度
+     * @param newHeight 新的bitmap高度
      * @return
      */
     private Bitmap setBitmapSize(Bitmap bm, int newWidth, int newHeight) {
@@ -161,7 +161,7 @@ public class CircleProgressBar extends View {
     /**
      * 设置暂停时显示的图片
      *
-     * @return
+     * @param pauseImage 暂停时显示的图片资源
      */
     public void setPauseBitmap(int pauseImage) {
         this.pauseBitmap = BitmapFactory.decodeResource(getResources(), pauseImage);
@@ -183,7 +183,7 @@ public class CircleProgressBar extends View {
     /**
      * 设置完成时显示的图片
      *
-     * @return
+     * @param finishImage 完成时显示的图片资源
      */
     public void setFinishBitmap(int finishImage) {
         this.finishBitmap = BitmapFactory.decodeResource(getResources(), finishImage);
@@ -205,7 +205,7 @@ public class CircleProgressBar extends View {
     /**
      * 设置默认时显示的图片
      *
-     * @return
+     * @param defaultImage 默认时显示的图片资源
      */
     public void setDefaultBitmap(int defaultImage) {
         this.defaultBitmap = BitmapFactory.decodeResource(getResources(), defaultImage);
@@ -227,7 +227,7 @@ public class CircleProgressBar extends View {
     /**
      * 设置下载时显示的图片
      *
-     * @return
+     * @param downloadImage 下载时显示的图片资源
      */
     public void setDownloadBitmap(int downloadImage) {
         this.downloadBitmap = BitmapFactory.decodeResource(getResources(), downloadImage);
@@ -236,7 +236,7 @@ public class CircleProgressBar extends View {
     /**
      * 绘制默认状态
      *
-     * @param canvas
+     * @param canvas 画布
      */
     private void drawDefault(Canvas canvas) {
         //  图片缩小显示
@@ -250,7 +250,7 @@ public class CircleProgressBar extends View {
     /**
      * 绘制暂停时的状态
      *
-     * @param canvas
+     * @param canvas 画布
      */
     private void drawPause(Canvas canvas) {
         int size = height;
@@ -283,7 +283,7 @@ public class CircleProgressBar extends View {
     /**
      * 绘制正在下载时的状态
      *
-     * @param canvas
+     * @param canvas 画布
      */
     private void drawProgress(Canvas canvas) {
         int size = height;
@@ -316,7 +316,7 @@ public class CircleProgressBar extends View {
     /**
      * 绘制下载完成的状态
      *
-     * @param canvas
+     * @param canvas 画布
      */
     private void drawDownloadFinish(Canvas canvas) {
         //  图片缩小显示
@@ -331,7 +331,6 @@ public class CircleProgressBar extends View {
      * dp转px
      *
      * @param dp dp值
-     * @return
      */
     public int dp2px(int dp) {
         return (int) ((getResources().getDisplayMetrics().density * dp) + 0.5);
@@ -382,7 +381,7 @@ public class CircleProgressBar extends View {
     /**
      * 设置圆心中间的背景颜色
      *
-     * @param color
+     * @param color 圆心中间的背景颜色
      * @return
      */
     public CircleProgressBar setCircleBackgroud(int color) {
@@ -393,8 +392,7 @@ public class CircleProgressBar extends View {
     /**
      * 设置圆相对整个控件的宽度或者高度的占用比例
      *
-     * @param scale
-     * @return
+     * @param scale 圆相对整个控件的宽度或者高度的占用比例
      */
     public CircleProgressBar setPaddingscale(float scale) {
         this.paddingScale = scale;
